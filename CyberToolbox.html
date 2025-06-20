@@ -1,0 +1,46 @@
+<!-- cyberToolbox.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cybersecurity Toolbox</title>
+  <link rel="stylesheet" href="cyberToolbox.css">
+</head>
+<body>
+  <h1>Cybersecurity Toolbox</h1>
+  <div class="toolbox">
+    <div class="section">
+      <label for="sentence">Enter a sentence to encrypt:</label>
+      <input id="sentence" type="text">
+
+      <label for="shift">Enter a shift amount (positive or negative):</label>
+      <input id="shift" type="number">
+
+      <button id="encryptBtn">Encrypt</button>
+
+      <div class="result" id="encryptResult"></div>
+    </div>
+
+    <div class="section">
+      <label for="hashInput">Enter a sentence to hash:</label>
+      <input id="hashInput" type="text">
+
+      <button id="hashBtn">Hash</button>
+
+      <div class="result" id="hashResult"></div>
+    </div>
+
+    <div class="section">
+      <label for="bruteInput">Enter a Caesar-encrypted sentence to brute force:</label>
+      <input id="bruteInput" type="text">
+
+      <button id="bruteBtn">Brute Force</button>
+
+      <div class="result" id="bruteResult"></div>
+    </div>
+  </div>
+
+  <script src="words.js"></script>
+  <script src="cyberToolbox.js"></script>
+</body>
+</html>
